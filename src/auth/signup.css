@@ -1,0 +1,39 @@
+#signup {
+    /* border: 1px solid white; */
+    width: 35%;
+    margin: auto;
+}
+#inputs {
+    font-family: var(--font-two);
+    color: var(--white);
+    margin: auto;
+}
+
+#labelEmail {
+    /* border: 1px solid purple; */
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+}
+/* #emailLabel {
+    margin: auto;
+} */
+
+#nameLabel {
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+}
+
+#labelName {
+    margin: auto;
+    /* border: 1px solid yellow; */
+    width: 15%;
+}
+
+#labelPassword {
+    /* border: 1px solid red; */
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}

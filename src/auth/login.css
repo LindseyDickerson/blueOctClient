@@ -1,0 +1,31 @@
+#inputs {
+    font-family: var(--font-two);
+    color: var(--white);
+    margin: auto;
+}
+
+#buttonDiv {
+    /* border: 1px solid yellowgreen; */
+
+}
+
+#loginText {
+    /* border: 1px solid blue; */
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+}
+
+#labelEmailLogin {
+    /* border: 1px solid orange; */
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+}
+
+#labelPasswordLogin {
+    /* border: 1px solid mediumvioletred; */
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}

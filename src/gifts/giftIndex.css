@@ -1,0 +1,10 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: flex-start, baseline;
+    /* border: 1px solid white; */
+    background-color: transparent;
+    top: -168px;
+}

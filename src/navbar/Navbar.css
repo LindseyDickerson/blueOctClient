@@ -1,0 +1,139 @@
+@import '../css/main.css';
+
+#navDiv {
+    display: inline-block;
+    background-color: var(--red);
+    height: 100px;
+    width: 100vw;
+
+}
+#navBar {
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: flex-start;
+    align-content: flex-start; */
+    background-color: var(--red);
+    height: 100px;
+    width: 100vw;
+    font-family: var(--font-two);
+    color: var(--white);
+    z-index: 0;
+    align-items: center;
+    /* align-content: center; */
+
+}
+
+#elf {
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-content: flex-start; */
+    height: 75px;
+    z-index: 1;
+    /* margin: 10px; */
+    margin-right: 0px;
+    margin-bottom: 410px;
+    /* border: 1px solid white; */
+}
+
+#commentBubble {
+    display: inline-block;
+    height: 95px;
+    /* display: flex;
+    align-content: flex-start; */
+    transform: rotate(-35deg);
+    /* background-color: var(--white); */
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 70px;
+    z-index: 1;
+    /* border: 1px solid magenta; */
+}
+
+.bubble {
+    display: inline-block;
+    /* border: 1px solid white; */
+    width: 100px;
+    height: 100px;
+}
+
+#click {
+    z-index: 2;
+    font-family: var(--font-three);
+    top: -140px;
+    right: -39px;
+    position: relative;
+    /* border: 1px solid yellowgreen; */
+    width: 50px;
+    
+    
+}
+
+#the {
+    z-index: 2;
+    font-family: var(--font-three);
+    top: -162px;
+    right: -36px;
+    position: relative;
+    /* border: 1px solid yellowgreen; */
+    width: 50px;
+}
+
+#treeText {
+    z-index: 2;
+    font-family: var(--font-three);
+    top: -187px;
+    right: -22px;
+    position: relative;
+    /* border: 1px solid yellowgreen; */
+    width: 50px;
+}
+
+#treeDiv {
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid white; */
+    width: 100px;
+    top: -170px;
+    left: 10px;
+}
+
+#tree {
+    display: inline-block;
+    position: relative;
+    /* display: flex; */
+    /* margin-right: 50px; */
+    width: 50px;
+    border: 1px solid yellow;
+    
+
+}
+
+#title {
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 60px;
+    /* border: 1px solid white; */
+    margin-left: 150px;
+    margin-bottom: 50px; 
+    margin-top: 20px;
+    position: absolute;
+}
+
+#logout {
+    display: inline-block;
+    color: var(--white);
+    height: 35px;
+    width: 60px;
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: var(--green);
+    border: 1px solid var(--white);
+    /* margin-left: 100px; */
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+}

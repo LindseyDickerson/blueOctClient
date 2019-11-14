@@ -1,0 +1,109 @@
+#divCreate {
+    /* Div that houses the plus sign image */
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    width: 150px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* #imageAddDiv {
+    width: 150px;
+} */
+
+#createCard {
+    width: 115px;
+    height: 115px;
+    margin: 10px;
+    display: flex;
+    background-color: var(--red);
+}
+
+
+#addImg {
+    display: flex;
+    justify-content: center;;
+    /* margin-top: 20%; */
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    background-color: var(--red);
+    margin: auto;
+}
+
+#addModal {
+    border-radius: 25px;
+}
+
+body {
+    font-family: var(--font-one);
+    font-size: medium;
+    
+}
+
+#modalHeader {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+#modalBody {
+    background-color: var(--green);
+    
+}
+
+#formBody {
+    background-color: var(--green);
+    color: var(--white);
+    font: 14px;
+}
+
+#recInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#giftInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#costInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#storageInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#buyInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#wrapInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#delvInput {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#formSave {
+    background-color: var(--red);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* #dropdown {
+    color: var(--green);
+    font-family: var(--font-one);
+    padding: 10px;
+} */
+
+/* #caret {
+    background-color: var(--green);
+} */

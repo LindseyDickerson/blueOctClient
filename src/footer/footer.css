@@ -1,0 +1,17 @@
+
+
+#closingText {
+    margin: auto;
+    font-family: var(--font-one);
+    color: var(--yellow);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+   }
+
+#footerBar {
+    border-color: var(--yellow);
+}
