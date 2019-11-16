@@ -8,14 +8,14 @@ import Tree from '../assets/christmas-tree.png';
 
 const Footer = (props) => {
 
-    const {
-        buttonLabel,
-        className
-      } = props;
+    // const {
+    //     buttonLabel,
+    //     className
+    //   } = props;
     
-      const [modal, setModal] = useState(false);
+    //   const [modal, setModal] = useState(false);
     
-      const toggle = () => setModal(!modal);
+    //   const toggle = () => setModal(!modal);
 
     return (
         <footer>
@@ -23,7 +23,7 @@ const Footer = (props) => {
             <Row>
                 <p id='closingText'>©Lindsey Dickerson 2019</p>
                 <br/>
-                <div>
+                {/* <div>
                  <Button color="danger" onClick={toggle}>Credits</Button>
                    <Modal isOpen={modal} toggle={toggle} className={className}>
                     <ModalHeader toggle={toggle}>Credits</ModalHeader>
@@ -36,10 +36,10 @@ const Footer = (props) => {
                     </ModalBody>
                     <ModalFooter>
                     {/* <Button color="primary" onClick={toggle}>Do Something</Button>{' '} */}
-                        <Button color="secondary" onClick={toggle}>Close</Button>
+                        {/* <Button color="secondary" onClick={toggle}>Close</Button>
                     </ModalFooter>
                   </Modal>
-                </div>
+                </div> */} */}
                 <p id='closingText'>Eleven Fifty Academy Blue Badge Project</p>
             </Row>
         </footer>

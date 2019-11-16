@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {  Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
-import APIURL from '../helpers/environment';
+//import APIURL from '../helpers/environment';
 
 const GiftEdit = (props, gift) => {
 
@@ -24,7 +24,7 @@ const GiftEdit = (props, gift) => {
 
     const giftUpdate = (event, gift) => {
         event.preventDefault();
-        fetch(`${APIURL}/api/gift/${props.giftToUpdate.id}`, {
+        fetch(`http://localhost:3001/api/gift/${props.giftToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({gift: {recipient: editRecipient, giftItem: editGiftItem, cost: editCost, storagePlace: editStoragePlace, purchaseAt: editPurchaseAt, wrappedIn: editWrappedIn, delivered: editDelivered}}),
             headers: new Headers({

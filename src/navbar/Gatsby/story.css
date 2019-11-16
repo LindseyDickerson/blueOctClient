@@ -1,0 +1,24 @@
+#elfStory {
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border: 1px solid white;
+    margin-top: 200px;
+    margin-left: 250px;
+    
+}
+
+h1 {
+    font-family: var(--font-one);
+    border: 1px solid white;
+    width: 240px;
+    color: var(--white);
+    margin-left: 210px;
+}
+
+#pTagStory {
+    border: 1px solid white;
+    font-family: var(--font-one);
+    color: var(--white);
+}

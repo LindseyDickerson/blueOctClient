@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import {Card} from 'reactstrap';
+import { Switch, Route } from 'react-router-dom'
 import GiftCard from './GiftCard';
 import GiftCreate from './GiftCreate';
 import GiftEdit from './GiftEdit';
 import './giftIndex.css';
-import APIURL from '../helpers/environment';
+import Story from '../navbar/Gatsby/Story';
+
+//import APIURL from '../helpers/environment';
 
 
 const GiftIndex = (props) => {
@@ -21,7 +24,7 @@ const GiftIndex = (props) => {
     // const [delivered, setDelivered] = useState('');
 
     const fetchGift = () => {
-        fetch(`${APIURL}/api/gift/all`, {
+        fetch('http://localhost:3001/api/gift/all', {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
@@ -53,8 +56,8 @@ const GiftIndex = (props) => {
 
     return (
         <Card id="cards">
-           <GiftCreate fetchGift={fetchGift} token={props.token}/>
-           <GiftCard gift={gift} editUpdateGift={editUpdateGift} updateOn={updateOn} fetchGift={fetchGift} token={props.token}/>
+            <GiftCreate fetchGift={fetchGift} token={props.token}/>
+            <GiftCard gift={gift} editUpdateGift={editUpdateGift} updateOn={updateOn} fetchGift={fetchGift} token={props.token}/>
             {updateActive ? <GiftEdit giftToUpdate={giftToUpdate} updateOff={updateOff} token={props.token} fetchGift={fetchGift}/> : <></>}
         
         </Card>

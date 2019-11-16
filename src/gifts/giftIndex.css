@@ -4,7 +4,10 @@
     justify-content: flex-start;
     align-content: space-around;
     align-items: flex-start, baseline;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     background-color: transparent;
-    top: -168px;
+    top: -2px;
+    width: 170px;
+    height: 152px;
+    left: 150px;
 }

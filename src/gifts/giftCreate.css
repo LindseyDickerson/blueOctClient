@@ -3,8 +3,10 @@
     background-color: var(--red);
     border: 1px solid var(--white);
     width: 150px;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 15px;
+    border: 1px solid purple;
+    margin-top: -50px;
 }
 
 /* #imageAddDiv {

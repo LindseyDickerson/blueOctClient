@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Card, CardTitle, CardBody, CardSubtitle, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import './giftCard.css'
-import APIURL from '../helpers/environment'
+//import APIURL from '../helpers/environment'
 
 //import GiftCreate from './GiftCreate';
 
@@ -20,7 +20,7 @@ const GiftCard = (props) => {
       } = props;
   
     const deleteGift = (gifts) => {
-        fetch(`${APIURL}/api/gift/delete/${gifts.id}`, {
+        fetch(`http://localhost:3001/api/gift/delete/${gifts.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

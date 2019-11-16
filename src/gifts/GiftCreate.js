@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Card, CardImg, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, Button, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Alert } from 'reactstrap';
 import Add from '../assets/add.png';
 import './giftCreate.css';
-import APIURL from '../helpers/environment'
+//import APIURL from '../helpers/environment'
 //import PropTypes from 'prop-types';
 
 const GiftCreate = (props) => {
@@ -35,7 +35,7 @@ const GiftCreate = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`${APIURL}/api/gift/wrap`, {
+        fetch('http://localhost:3001/api/gift/wrap', {
             method: 'POST',
             body: JSON.stringify({gift: {recipient: recipient, giftItem: giftItem, cost: cost, storagePlace: storagePlace, purchaseAt: purchaseAt, wrappedIn: wrappedIn, delivered: delivered}}),
             headers: new Headers({

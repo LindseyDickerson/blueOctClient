@@ -3,37 +3,35 @@ font-family: 'Mountains of Christmas', cursive; */
 
 
 .App {
-  /* background-image: url('../src/assets/fuzzyLights.jpg'); */
-  /* background-color: #246eb9;
-background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-color: #246eb9;
-background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  
-/* background-color: #246eb9;
-background-image: url("https://www.transparenttextures.com/patterns/wet-snow.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-color: #050001;
-background-image: url("https://www.transparenttextures.com/patterns/snow.png"); */
+  background-color: #000524;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
-
-/* background-color: ##03001a;
-background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-background-color: #000524;
-background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-height: 100%;
+  height: 100%;
   width: 100%;
   background-repeat: repeat;
   /* background-position: center; */
   background-size: cover;
-  
+
 
 }
 
+/* .sidebarDiv {
+  display: flex;
+  background-color: var(--green);
+  width: 10%;
+  border: 1px solid white;
+  font-family: var(--font-three);
+ 
+} */
+.sidebar {
+  display: flex;
+  background-color: #53565A;
+  margin-top: 10px;
+  width: 15%;
+  /* border: 1px solid white; */
+  background-color: var(--green);
+  font-family: var(--font-three);
+  height: 100vh;
+  margin-top: -240px
+}

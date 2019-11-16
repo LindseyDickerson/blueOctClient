@@ -5,6 +5,9 @@ import Auth from './auth/Auth';
 import Footer from './footer/Footer';
 import GiftIndex from './gifts/GiftIndex';
 import Navbar from './navbar/Navbar';
+import Sidebar from './sidebar/Sidebar';
+import { BrowserRouter as Router} from 'react-router-dom';
+
 
 function App() {
 
@@ -38,7 +41,9 @@ function App() {
   return (
     <div className="App">
       <Navbar clearToken={clearToken} token={sessionToken}/>
-      {protectedViews()}
+      <Router>
+      <Sidebar protectedViews={protectedViews} token={sessionToken} updateToken={updateToken}/> 
+      </Router>
       {/* <Auth updateToken={updateToken} /> */}
       <Footer/>
     </div>
