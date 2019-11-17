@@ -25,7 +25,7 @@ const Login = (props) => {
     }
 
     return (
-        <Container>
+        <Container id="loginContainer">
             <Row>
                 <Col md="6" id="inputs">
                     <h1 id="loginText">Login</h1>
@@ -34,16 +34,16 @@ const Login = (props) => {
                             <div id="labelEmailLogin">
                             <Label htmlFor="email">Email</Label>
                             </div>
-                            <Input onChange={(e) => setEmail(e.target.value)} name="email" value={email}/>
+                            <Input id="inputEntry" onChange={(e) => setEmail(e.target.value)} name="email" value={email}/>
                         </FormGroup>
                         <FormGroup>
                             <div id="labelPasswordLogin">
                             <Label htmlFor="password">Password</Label>
                             </div>
-                            <Input onChange={(e) => setPasswordHash(e.target.value)} type="password" name="passwordhash" value={passwordHash}/>
+                            <Input id="inputEntry" onChange={(e) => setPasswordHash(e.target.value)} type="password" name="passwordhash" value={passwordHash}/>
                         </FormGroup>
                         <div id="buttonDiv">
-                        <Button type="submit">Login</Button>
+                        <Button id="loginButton" type="submit">Login</Button>
                         </div>
                     </Form>
                 </Col>

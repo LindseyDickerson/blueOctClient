@@ -1,13 +1,17 @@
 #cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-around;
-    align-items: flex-start, baseline;
-    border: 1px solid white;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* flex-basis: auto; */
+    /* justify-content: flex-start, space-evenly; */
+    /*align-content: space-around;*/
+    align-items: flex-start, baseline; 
+    /* border: 1px solid white; */
     background-color: transparent;
-    top: -2px;
-    width: 170px;
-    height: 152px;
-    left: 150px;
+    width: 100vw;
+    /* top: -2px; */
+    /* width: 170px; */
+    /* height: 152px;*/
+    left: 20px;
+    top: 5px; 
 }

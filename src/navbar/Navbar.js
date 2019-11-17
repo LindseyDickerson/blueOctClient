@@ -32,7 +32,7 @@ const Navbar = (props) => {
                 <div id="treeDiv">
                     <Gatsby id="tree"/>
                 </div>
-                <h1 id="title">Gifting with Gatsby</h1>
+                <p id="title">Gifting with Gatsby</p>
                 <Button type="button" onClick={props.clearToken} id='logout' >Logout</Button>
                 {/* commenting this out, was right after the button, seeing ifthis changes anything{' '} */}
                 

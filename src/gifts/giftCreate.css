@@ -1,30 +1,35 @@
 #divCreate {
     /* Div that houses the plus sign image */
-    background-color: var(--red);
-    border: 1px solid var(--white);
-    width: 150px;
+    /* background-color: var(--red); */
+    /* border: 1px solid var(--white); */
+    /* width: 150px;*/
     /* margin: 10px; */
-    border-radius: 15px;
+    /* border-radius: 15px;
     border: 1px solid purple;
-    margin-top: -50px;
+    margin-top: 50px; */ 
 }
 
-/* #imageAddDiv {
+#imageAddDiv {
     width: 150px;
-} */
+}
 
 #createCard {
-    width: 115px;
-    height: 115px;
-    margin: 10px;
-    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px; 
+    display: flex; 
     background-color: var(--red);
-}
+    border: 1px solid white;
+    margin: 2px;
+    border-radius: 15px;
+    /* margin-top: 300px;
+    margin-left: 100px;*/
+} 
 
 
 #addImg {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
     /* margin-top: 20%; */
     height: 100px;
     width: 100px;
@@ -32,6 +37,7 @@
     background-color: var(--red);
     margin: auto;
 }
+
 
 #addModal {
     border-radius: 25px;

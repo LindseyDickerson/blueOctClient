@@ -1,8 +1,9 @@
 #toggleLogin {
     display: flex;
     flex-direction: row;
-    font-family: var(--font-two);
+    font-family: var(--font-red);
     color: var(--white);
+    background-color: var(--red);
 }
 
 #buttonDiv {

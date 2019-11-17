@@ -1,5 +1,69 @@
 h2 {
     color: var(--white);
-    margin-left: 300px;
-    border: 1px solid white;
+    margin-left: 340px;
+    /* border: 1px solid white; */
+    font-family: var(--font-one);
+    margin-top: 30px;
+    width: 100px;
+    margin-bottom: 40px;
+    
+}
+
+#h4Text {
+    /* border: 1px solid white; */
+    font-family: var(--font-one);
+    color: var(--white);
+    margin-left: 190px;
+    width: 80%;
+    text-align: center;
+}
+
+#creditElf {
+  height: 75px;
+  /* border: 1px solid white; */
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+#creditElfText {
+    font-family: var(--font-one);
+    color: var(--white);
+    /* border: 1px solid white; */
+    margin-left: 270px;
+    margin-top: -50px;
+    font-size: 18px;
+    text-align: center;
+    width: 280px;
+}
+
+#creditBubble {
+    height: 75px;
+  /* border: 1px solid white; */
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+#creditBubbleText {
+    font-family: var(--font-one);
+    color: var(--white);
+    /* border: 1px solid white; */
+    margin-left: 260px;
+    margin-top: -50px;
+    font-size: 18px;
+    text-align: center;
+    width: 280px;
+}
+
+#creditTree {
+    height: 75px;
+  /* border: 1px solid white; */
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+#creditAdd {
+    height: 75px;
+    /* border: 1px solid white; */
+    margin-left: 180px;
+    margin-top: 30px;
 }

@@ -36,22 +36,22 @@ const Signup = (props) => {
                     <div id="labelEmail">
                     <Label htmlFor="email" id="emailLabel">Email</Label>
                     </div>
-                    <Input onChange={(e) => setEmail(e.target.value)} name="email" value={email} required />
+                    <Input id="inputEntry" onChange={(e) => setEmail(e.target.value)} name="email" value={email} required />
                 </FormGroup>
                 <FormGroup>
                     <div id="labelName">
                     <Label htmlFor="name" id="nameLabel">Name</Label>
                     </div>
-                    <Input onChange={(e) => setName(e.target.value)} name="name" value={name} required />
+                    <Input id="inputEntry" onChange={(e) => setName(e.target.value)} name="name" value={name} required />
                 </FormGroup>
                 <FormGroup>
                     <div id="labelPassword">
                     <Label htmlFor="passwordHash" id="passwordLabel">Password</Label>
                     </div>
-                    <Input onChange={(e) => setPasswordHash(e.target.value)} name="passwordHash" type="password" value={passwordHash} required/>
+                    <Input id="inputEntry" onChange={(e) => setPasswordHash(e.target.value)} name="passwordHash" type="password" value={passwordHash} required/>
                 </FormGroup>
                 <div id="buttonDiv">
-                   <Button type="submit">Signup</Button>
+                   <Button id="signupButton" type="submit">Signup</Button>
                 </div>
             </Form>
             </Col>

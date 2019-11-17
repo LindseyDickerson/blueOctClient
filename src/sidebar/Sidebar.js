@@ -20,8 +20,8 @@ const Sidebar = (props) => {
             </div>
             <div className="sidebar-route">
                 <Switch>
-    <Route exact path="/giftindex">{(props.token === localStorage.getItem('token') ?  <GiftIndex token={props.token}/> : <Auth updateToken={props.updateToken}/>)}
-  </Route>
+                    <Route exact path="/giftindex">{(props.token === localStorage.getItem('token') ?  <GiftIndex token={props.token}/> : <Auth updateToken={props.updateToken}/>)}
+                         </Route>
                     <Route exact path="/story"><Story/></Route>
                     <Route exact path="/credits"><Credits/></Route>
                 </Switch>

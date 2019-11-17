@@ -33,6 +33,7 @@ body {
     margin: 5px;
     border: 1px solid var(--white);
     border-radius: 15px;
+    top: -12px;
 }
 
 #editButton {

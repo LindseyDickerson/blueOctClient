@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import { Row, Button, Modal, ModalHeader, ModalBody, ModalFooter  } from 'reactstrap';
 import './footer.css';
-import Elf from '../assets/elf.png';
-import Add from '../assets/add.png';
-import BubbleText from '../assets/bubbleText.png';
-import Tree from '../assets/christmas-tree.png';
+
 
 const Footer = (props) => {
 
@@ -21,6 +18,7 @@ const Footer = (props) => {
         <footer>
             <hr id="footerBar"/>
             <Row>
+                <div id="footerSidebar"></div>
                 <p id='closingText'>©Lindsey Dickerson 2019</p>
                 <br/>
                 {/* <div>
