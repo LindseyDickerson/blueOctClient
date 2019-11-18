@@ -10,7 +10,7 @@ const Login = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3001/api/user/login', {
+        fetch(`${APIURL}/api/user/login`, {
             method: 'POST',
             body: JSON.stringify({user: { email: email, passwordhash: passwordHash}}),
             headers: new Headers({

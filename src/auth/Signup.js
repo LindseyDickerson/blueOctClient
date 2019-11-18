@@ -11,7 +11,7 @@ const Signup = (props) => {
 
     let handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3001/api/user/createuser', {
+        fetch(`${APIURL}/api/user/createuser`, {
             method: 'POST',
             body: JSON.stringify({user: {email: email, name: name, passwordhash: passwordHash}}),
             headers: new Headers({
