@@ -8,15 +8,13 @@ font-family: 'Mountains of Christmas', cursive; */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   /* height: 200vh; */
-  width: 100vw;
+  width: 150vw;
   /* background-repeat: repeat; */
   /* background-position: center; */
   background-size: cover;
   z-index: -1;
   /* overflow: hidden; */
-  min-height: 110%;
-  /* display: flex; */
-  /* flex-grow: 1; */
+  min-height: 100vh;
 
 }
 

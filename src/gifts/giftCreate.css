@@ -7,6 +7,7 @@
     /* border-radius: 15px;
     border: 1px solid purple;
     margin-top: 50px; */ 
+    height: 150px;
 }
 
 #imageAddDiv {
@@ -20,7 +21,7 @@
     display: flex; 
     background-color: var(--red);
     border: 1px solid white;
-    margin: 2px;
+    margin: 14px;
     border-radius: 15px;
     /* margin-top: 300px;
     margin-left: 100px;*/

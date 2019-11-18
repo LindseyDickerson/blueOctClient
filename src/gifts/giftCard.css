@@ -25,6 +25,7 @@
     color: var(--white);
     width: 225px;
     border-radius: 15px;
+    max-height: 350px;
     /* border: 1px solid var(--green); */
     
 }
@@ -33,7 +34,10 @@
     margin: 5px;
     border: 1px solid var(--white);
     border-radius: 15px;
-    top: -12px;
+    /* top: -12px; */
+    max-height: 350px;
+    
+
 }
 
 #editButton {
