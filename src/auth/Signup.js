@@ -48,7 +48,7 @@ const Signup = (props) => {
                     <div id="labelPassword">
                     <Label htmlFor="passwordHash" id="passwordLabel" >Password</Label>
                     </div>
-                    <Input id="inputEntry" onChange={(e) => setPasswordHash(e.target.value)} name="passwordHash" type="password" value={passwordHash} minlength="5" required/>
+                    <Input id="inputEntry" onChange={(e) => setPasswordHash(e.target.value)} name="passwordHash" type="password" value={passwordHash} minLength="5" required/>
                 </FormGroup>
                 <div id="buttonDiv">
                    <Button id="signupButton" type="submit">Signup</Button>

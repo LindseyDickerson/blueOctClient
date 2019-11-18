@@ -7,9 +7,10 @@ switch (window.location.hostname) {
       APIURL = 'http://localhost:3001';
         break;
         //this is the deployed react application
-    case 'lmd-gatsby-client.herokuapp.com':
+      
+    default: 
         //this is the full url of your deployed api (server)
-        APIURL = 'lmd-gatsby-server.herokuapp.com'
+        APIURL = 'https://lmd-gatsby-server.herokuapp.com'
           break;
 }
 export default APIURL;
