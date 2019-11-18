@@ -8,7 +8,7 @@ import './giftIndex.css';
 import Story from '../navbar/Gatsby/Story';
 import Selector from '../gifts/Selector';
 
-//import APIURL from '../helpers/environment';
+import APIURL from '../helpers/environment';
 
 
 const GiftIndex = (props) => {
@@ -25,7 +25,7 @@ const GiftIndex = (props) => {
     // const [delivered, setDelivered] = useState('');
 
     const fetchGift = () => {
-        fetch('http://localhost:3001/api/gift/all', {
+        fetch(`${APIURL}/api/gift/all`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
