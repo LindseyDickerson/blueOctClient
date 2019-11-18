@@ -11,9 +11,11 @@
     width: 100vw;
     /* top: -2px; */
     /* width: 170px; */
-    /* height: 152px;*/
+    height: 100%;
     left: 20px;
     top: 5px; 
+    margin-bottom: 50px;
+    /* z-index: 2; */
 }
 
 /* #selector {
