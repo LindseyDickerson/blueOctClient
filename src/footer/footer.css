@@ -1,6 +1,6 @@
 footer {
     border-top: 2px solid var(--yellow);
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;

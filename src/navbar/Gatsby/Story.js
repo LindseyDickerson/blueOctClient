@@ -1,6 +1,7 @@
 import React from 'react';
 import Elf from '../../assets/elf.png';
 import './story.css'
+import SnowStorm from 'react-snowstorm';
 
 const Story = () => {
 
@@ -8,6 +9,7 @@ const Story = () => {
 
     return(
         <div id="main">
+           <SnowStorm/>
         <img tag="a" src={Elf} id="elfStory" style={{ cursor: "pointer"}}></img>
         <h1 id="storyh1">Gatsby's Story</h1>
         <div id="textStoryDiv">

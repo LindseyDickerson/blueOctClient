@@ -6,6 +6,7 @@ import './Navbar.css';
 import Elf from '../assets/elf.png';
 import Gatsby from './Gatsby/Gatsby';
 import Comment from '../assets/flippedBubblePS.png';
+import SnowStorm from 'react-snowstorm';
 // import Story from './Gatsby/Story';
 // import GiftCreate from '../gifts/GiftCreate';
 // import GiftIndex from '../gifts/GiftIndex';

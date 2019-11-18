@@ -4,6 +4,7 @@ import Add from '../assets/add.png';
 import './giftCreate.css';
 //import APIURL from '../helpers/environment'
 //import PropTypes from 'prop-types';
+import SnowStorm from 'react-snowstorm';
 
 const GiftCreate = (props) => {
     const [gift, setGift] = useState([]);
@@ -95,6 +96,7 @@ const GiftCreate = (props) => {
                             <Input name="delivered" id="delvInput" value={delivered} onChange={(e) => setDelivered(e.target.value)}/> 
                         </FormGroup>
                         <Button id="formSave" type="submit" onClick={toggle}>Save</Button>
+                        <SnowStorm/>
                         </Form>
                 </ModalBody>
             </Modal>
