@@ -5,9 +5,8 @@ import GiftCard from './GiftCard';
 import GiftCreate from './GiftCreate';
 import GiftEdit from './GiftEdit';
 import './giftIndex.css';
-import Story from '../navbar/Gatsby/Story';
-import Selector from '../gifts/Selector';
-
+// import Story from '../navbar/Gatsby/Story';
+// import Selector from '../gifts/Selector';
 import APIURL from '../helpers/environment';
 
 

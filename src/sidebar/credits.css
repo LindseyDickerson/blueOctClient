@@ -6,6 +6,7 @@
   width: 85vw;
   left: -50px;
   height: 80vh;
+  position: relative;
 }
 
 #credith1 {
@@ -41,6 +42,7 @@
   /* border: 1px solid white; */
   /* margin-left: 180px; */
   margin-top: 20px;
+  /* position: absolute; */
 }
 
 #creditElfText {
