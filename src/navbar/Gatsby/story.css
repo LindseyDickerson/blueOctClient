@@ -1,32 +1,37 @@
 #main {
     /* border: 1px solid orangered; */
-    height: 500px;
-    margin-top: 50px;
-    margin-left: 128px;
-    width: 60vw;
+    height: 80vh;
+    margin-top: 30px;
+    /* margin-left: 128px; */
+    width: 85vw;
     margin-bottom: 5%;
+    margin-left: 20px;
 }
 
 #elfStory {
     height: 150px;
     display: flex;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap; */
     justify-content: flex-start;
     /* border: 1px solid white; */
     /* margin-top: 200px; */
     /* margin-left: 250px; */
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     
 }
 
-h1 {
+#storyh1 {
     font-family: var(--font-one);
     /* border: 1px solid white; */
-    width: 240px;
-    color: var(--white);
+    width: 230px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
+    color: var(--white);
+    /* margin */
+    /* margin-bottom: 10px; */
+    /* display: flex; */
+    /* margin-left: 100px; */
 }
 
 #textStoryDiv {
@@ -40,16 +45,19 @@ h1 {
     /* border: 1px solid white; */
     font-family: var(--font-one);
     color: var(--white);
+    font-size: 20px;
 }
 
 #pTagStory2 {
     /* border: 1px solid white; */
     font-family: var(--font-one);
     color: var(--white);
+    font-size: 20px;
 }
 
 #pTagStory3 {
     /* border: 1px solid white; */
     font-family: var(--font-one);
     color: var(--white);
+    font-size: 20px;
 }

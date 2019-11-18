@@ -9,7 +9,7 @@ const Story = () => {
     return(
         <div id="main">
         <img tag="a" src={Elf} id="elfStory" style={{ cursor: "pointer"}}></img>
-        <h1>Gatsby's Story</h1>
+        <h1 id="storyh1">Gatsby's Story</h1>
         <div id="textStoryDiv">
             <p id="pTagStory">Hi! My name is Gatsby, the Great Gifting Elf. I've always had a knack for organizing, and I can't think of something that brings me joy more than presents! So putting the two together makes me like a kid on Christmas morning!</p> 
             <br/>

@@ -57,7 +57,7 @@ const GiftIndex = (props) => {
 
     return (
         <>
-        <Selector id="selector"/>
+        {/* <Selector id="selector"/> */}
         <Card id="cards">
             <GiftCreate fetchGift={fetchGift} token={props.token}/>
             <GiftCard gift={gift} editUpdateGift={editUpdateGift} updateOn={updateOn} fetchGift={fetchGift} token={props.token}/>

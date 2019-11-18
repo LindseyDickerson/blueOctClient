@@ -4,6 +4,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-left: 150px;
 
 }
 
@@ -33,12 +34,13 @@ footer {
 #footerBar {
     border-color: var(--yellow);
     margin-top: 0;
+    z-index: -1;
 }
 
-#footerSidebar {
+/* #footerSidebar {
     width: 155px;
     background-color: var(--green);
-    /* border: 1px solid white; */
+    border: 1px solid white; 
     margin-top: -20px;
     margin-left: 10px;
-}
+} */
