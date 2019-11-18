@@ -1,3 +1,10 @@
+#creditDiv {
+  /* border: 1px solid white; */
+  margin-bottom: 50px;
+  width: 100vw;
+  left: -50px;
+}
+
 h2 {
     color: var(--white);
     margin-left: 340px;
@@ -13,8 +20,8 @@ h2 {
     /* border: 1px solid white; */
     font-family: var(--font-one);
     color: var(--white);
-    margin-left: 190px;
-    width: 80%;
+    margin-left: 8%;
+    width: 60%;
     text-align: center;
 }
 

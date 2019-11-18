@@ -6,6 +6,7 @@ import GiftCreate from './GiftCreate';
 import GiftEdit from './GiftEdit';
 import './giftIndex.css';
 import Story from '../navbar/Gatsby/Story';
+import Selector from '../gifts/Selector';
 
 //import APIURL from '../helpers/environment';
 
@@ -15,7 +16,7 @@ const GiftIndex = (props) => {
     const [ gift, setGift ] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [giftToUpdate, setGiftToUpdate] = useState({});
-    // const [recipient, setRecipient] = useState('');
+    const [recipient, setRecipient] = useState('');
     // const [giftItem, setGiftItem] = useState('');
     // const [cost, setCost] = useState('');
     // const [storagePlace, setStoragePlace] = useState('');
@@ -55,12 +56,14 @@ const GiftIndex = (props) => {
     }, [])
 
     return (
+        <>
+        <Selector id="selector"/>
         <Card id="cards">
             <GiftCreate fetchGift={fetchGift} token={props.token}/>
             <GiftCard gift={gift} editUpdateGift={editUpdateGift} updateOn={updateOn} fetchGift={fetchGift} token={props.token}/>
             {updateActive ? <GiftEdit giftToUpdate={giftToUpdate} updateOff={updateOff} token={props.token} fetchGift={fetchGift}/> : <></>}
-        
         </Card>
+        </>
     );
 };
 export default GiftIndex;

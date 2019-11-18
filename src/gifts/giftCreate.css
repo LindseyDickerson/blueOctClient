@@ -14,8 +14,8 @@
 }
 
 #createCard {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     margin: 10px; 
     display: flex; 
     background-color: var(--red);
@@ -31,8 +31,8 @@
     display: flex;
     justify-content: center;
     /* margin-top: 20%; */
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     padding: 5px;
     background-color: var(--red);
     margin: auto;
@@ -68,42 +68,51 @@ body {
 #recInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #giftInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #costInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #storageInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #buyInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #wrapInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #delvInput {
     background-color: var(--red);
     color: var(--white);
+    border-radius: 15px;
 }
 
 #formSave {
     background-color: var(--red);
     color: var(--white);
     border: 1px solid var(--white);
+    border-radius: 15px;
+    margin-left: 190px;
 }
 
 /* #dropdown {

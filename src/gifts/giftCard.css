@@ -5,9 +5,9 @@
     display: flex;
 } */
 
-body {
+/* body {
     background-color: transparent;
-}
+} */
 
 #cardMapper {
     display: flex;
@@ -40,24 +40,27 @@ body {
     background-color: var(--navy);
     margin: 5px;
     border: 1px solid var(--white);
+    border-radius: 15px;
 }
 
 #firstDelete {
     background-color: var(--navy);
     border: 1px solid var(--white);
+    border-radius: 15px;
 }
 
 #keepButton {
     background-color: var(--navy);
     border: 1px solid var(--white);
     font: var(--white);
+    border-radius: 15px;
 }
 
 #yesDelete {
     background-color: var(--red);
     border: 1px solid var(--white);
     color: var(--white);
-    /* border-radius: 15px; */
+    border-radius: 15px;
 }
 
 /* #modalRadius {

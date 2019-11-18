@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {  Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
 //import APIURL from '../helpers/environment';
+import './giftEdit.css';
 
 const GiftEdit = (props, gift) => {
 
@@ -37,45 +38,51 @@ const GiftEdit = (props, gift) => {
         })
     }
 
+    const {
+        buttonLabel,
+        className
+    } = props;
+
     const toggle = () => {
         setModal(!modal);
     }
 
     return(
-        <Modal isOpen={true} toggle={toggle}>
-            <ModalHeader toggle={toggle}>Edit a Gift</ModalHeader>
-                <ModalBody>
-                 <Form onSubmit={giftUpdate} toggle={toggle}>
+        <Modal id="editModal" isOpen={toggle} toggle={toggle} className={className}>
+            <ModalHeader id="modalheader" >Edit a Gift</ModalHeader>
+                <ModalBody id="editModalBody">
+                 <Form id="editForm" onSubmit={giftUpdate} toggle={toggle}>
                     <FormGroup toggle={toggle}>
                         <Label htmlFor="recipient">Edit Recipient:</Label>
-                        <Input name="recipient" value={editRecipient} onChange={(e) => setEditRecipient(e.target.value)}/> 
+                        <Input id="input" name="recipient" value={editRecipient} onChange={(e) => setEditRecipient(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="giftItem">Edit Gift:</Label>
-                        <Input name="giftItem" value={editGiftItem} onChange={(e) => setEditGiftItem(e.target.value)}/> 
+                        <Input id="input" name="giftItem" value={editGiftItem} onChange={(e) => setEditGiftItem(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="cost">Edit Cost:</Label>
-                        <Input name="cost" value={editCost} onChange={(e) => setEditCost(e.target.value)}/> 
+                        <Input id="input" name="cost" value={editCost} onChange={(e) => setEditCost(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="storagePlace">I'm now storing it in:</Label>
-                        <Input name="storagePlace" value={editStoragePlace} onChange={(e) => setEditStoragePlace(e.target.value)}/> 
+                        <Input id="input" name="storagePlace" value={editStoragePlace} onChange={(e) => setEditStoragePlace(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="purchaseAt">Updated Purchase Location:</Label>
-                        <Input name="purchaseAt" value={editPurchaseAt} onChange={(e) => setEditPurchaseAt(e.target.value)}/> 
+                        <Input id="input" name="purchaseAt" value={editPurchaseAt} onChange={(e) => setEditPurchaseAt(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="wrappedIn">Updated Wrapping Paper Used:</Label>
-                        <Input name="wrappedIn" value={editWrappedIn} onChange={(e) => setEditWrappedIn(e.target.value)}/> 
+                        <Input id="input" name="wrappedIn" value={editWrappedIn} onChange={(e) => setEditWrappedIn(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="delivered">Has it Been Delivered?</Label>
-                        <Input name="delivered" value={editDelivered} onChange={(e) => setEditDelivered(e.target.value)}/> 
+                        <Input id="input" name="delivered" value={editDelivered} onChange={(e) => setEditDelivered(e.target.value)}/> 
                     </FormGroup>
-                    <Button type="submit" toggle={toggle}>Update Gift</Button>
-                </Form>
+                    <Button id="editModalButton" type="submit" toggle={toggle}>Update Gift</Button>
+                    <Button id="closeEditModal" toggle={toggle}>Close Without Updating</Button>
+            </Form>
             </ModalBody>
         </Modal>
 

@@ -6,15 +6,19 @@
 
 #signup {
     /* border: 1px solid white; */
-    width: 40%;
-    margin-left: 105px;
+    width: 110px;
+    /* margin-left: 105px; */
     margin-top: 20px;
+    
+
+    
 
 }
 #inputs {
     font-family: var(--font-one);
     color: var(--white);
     margin: auto;
+    
     /* background-color: var(--green); */
 }
 
@@ -22,12 +26,14 @@
     font-family: var(--font-one);
     color: var(--white);
     background-color: var(--green);
+    border-radius: 15px;
 }
 
 #inputEntry:focus {
     font-family: var(--font-one);
     color: var(--white);
     background-color: var(--red);
+    
 }
 
 #labelEmail {
@@ -67,4 +73,5 @@
     background-color: var(--red);
     border: 1px solid var(--white);
     font-family: var(--font-one);
+    border-radius: 15px;
 }

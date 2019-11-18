@@ -27,6 +27,7 @@
     width: 15%;
     margin: auto;
     padding: 10px;
+    font-family: var(--font-one);
 }
 
 #labelPasswordLogin {
@@ -34,6 +35,7 @@
     width: 20%;
     margin: auto;
     padding: 10px;
+    font-family: var(--font-one);
 }
 
 #inputEntry:focus {
@@ -43,4 +45,5 @@
 #loginButton {
     background-color: var(--red);
     font-family: var(--font-one);
+    border-radius: 15px;
 }
