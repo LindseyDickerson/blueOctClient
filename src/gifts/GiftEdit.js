@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import {  Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import {  Modal, ModalHeader, Card, CardImg, ModalBody, ModalFooter, Form, FormGroup, Label, Input, Button, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Alert, Dropdown } from 'reactstrap';
 import APIURL from '../helpers/environment';
 import './giftEdit.css';
+
+
 
 const GiftEdit = (props, gift) => {
 
@@ -12,7 +14,7 @@ const GiftEdit = (props, gift) => {
     const [storagePlace] = useState('');
     const [purchaseAt] = useState('');
     const [wrappedIn] = useState('');
-    const [delivered] = useState('');
+    const [delivered, setDelivered] = useState('');
     const [editRecipient , setEditRecipient ] = useState(props.giftToUpdate.recipient);
     const [editGiftItem , setEditGiftItem ] = useState(props.giftToUpdate.giftItem);
     const [editCost , setEditCost ] = useState(props.giftToUpdate.cost);
@@ -20,8 +22,10 @@ const GiftEdit = (props, gift) => {
     const [editPurchaseAt , setEditPurchaseAt ] = useState(props.giftToUpdate.purchaseAt);
     const [editWrappedIn , setEditWrappedIn ] = useState(props.giftToUpdate.wrappedIn);
     const [editDelivered , setEditDelivered ] = useState(props.giftToUpdate.delivered);
-    
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    // const [delivered, setDelivered] = useState('');
     const [modal, setModal] = useState(false);
+    const [selector, setSelector] = useState('Select');
 
     const giftUpdate = (event, gift) => {
         event.preventDefault();
@@ -46,6 +50,8 @@ const GiftEdit = (props, gift) => {
     const toggle = () => {
         setModal(!modal);
     }
+
+    const toggledropdown = () => setDropdownOpen(prevState => !prevState);
 
     return(
         <Modal id="editModal" isOpen={toggle} toggle={toggle} className={className}>
@@ -77,8 +83,17 @@ const GiftEdit = (props, gift) => {
                         <Input id="input" name="wrappedIn" value={editWrappedIn} onChange={(e) => setEditWrappedIn(e.target.value)}/> 
                     </FormGroup>
                     <FormGroup>
-                        <Label htmlFor="delivered">Has it Been Delivered?</Label>
-                        <Input id="input" name="delivered" value={editDelivered} onChange={(e) => setEditDelivered(e.target.value)}/> 
+                    <Label htmlFor="delivered">Has it Been Delivered?</Label>
+                            <Dropdown id="theDropdown" direction="up" isOpen={dropdownOpen} toggle={toggledropdown}>
+                                <DropdownToggle id="dropdownwithCarat" caret>{selector == 'Select' ? selector : delivered === 'Yes' ? 'Yes' : 'No'}</DropdownToggle>
+                                    <DropdownMenu id="dropdownMenu" value={delivered}>
+                                     <DropdownItem id="dropdownItem" name='delivered' value='Yes' onClick={(e) => {setDelivered(e.target.value);setSelector(undefined)}}>Yes</DropdownItem>
+                                     <DropdownItem id="dropdownItem" name='delivered' value='No' onClick={(e) => {setDelivered(e.target.value); setSelector(undefined)}}>No</DropdownItem>
+                            
+                            </DropdownMenu>
+                            </Dropdown>
+                        {/* <Label htmlFor="delivered">Has it Been Delivered?</Label>
+                        <Input id="input" name="delivered" value={editDelivered} onChange={(e) => setEditDelivered(e.target.value)}/>  */}
                     </FormGroup>
                     <Button id="editModalButton" type="submit" toggle={toggle}>Update Gift</Button>
                     <Button id="closeEditModal" toggle={toggle}>Close Without Updating</Button>

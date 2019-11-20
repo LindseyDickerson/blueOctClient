@@ -148,11 +148,11 @@
     display: inline-block;
     color: var(--white);
     height: 35px;
-    width: 60px;
+    width: 70px;
     /* display: flex;
     justify-content: space-between; */
     background-color: var(--green);
-    border: 1px solid var(--white);
+    border: 3px dashed var(--white);
     /* margin-left: 100px; */
     float: right;
     margin-right: 50px;

@@ -26,13 +26,13 @@
     width: 225px;
     border-radius: 15px;
     max-height: 350px;
-    /* border: 2px dashed var(--white); */
+    border: 3px dashed var(--white);
     
 }
 
 #eachCard {
     margin: 5px;
-    border: 2px dotted var(--white);
+    /* border: 3px dashed var(--white); */
     border-radius: 15px;
     /* top: -12px; */
     max-height: 350px;
@@ -43,26 +43,26 @@
 #editButton {
     background-color: var(--navy);
     margin: 5px;
-    border: 2px dashed var(--white);
+    border: 3px dashed var(--white);
     border-radius: 15px;
 }
 
 #firstDelete {
     background-color: var(--navy);
-    border: 2px dashed var(--white);
+    border: 3px dashed var(--white);
     border-radius: 15px;
 }
 
 #keepButton {
     background-color: var(--navy);
-    border: 2px dashed var(--white);
+    border: 3px dashed var(--white);
     font: var(--white);
     border-radius: 15px;
 }
 
 #yesDelete {
     background-color: var(--red);
-    border: 2px dashed var(--white);
+    border: 3px dashed var(--white);
     color: var(--white);
     border-radius: 15px;
 }
@@ -73,11 +73,16 @@
     border: 1px solid var(--red);
 } */
 
+#modalDelete {
+    border: 3px dashed white;
+    border-radius: 15px;
+}
+
 #deleteModal {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px 15px 0 0;
-   
+    
 }
 
 #deleteBody {
@@ -91,3 +96,4 @@
     color: var(--white);
     border-radius: 0 0 15px 15px;
 }
+

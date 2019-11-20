@@ -1,5 +1,5 @@
 #editModal {
-    border: 1px solid var(--white);
+    border: 3px dashed var(--white);
     border-radius: 15px;
 }
 
@@ -13,7 +13,7 @@
     background-color: var(--red);
     font-family: var(--font-one);
     color: var(--white);
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
     border-radius: 15px;
 }
 
@@ -30,14 +30,14 @@
 
 #editModalButton {
     background-color: var(--red);
-    border: 1px solid var(--white);
+    border: 3px dashed var(--white);
     margin-left: 10%;
     border-radius: 15px;
 }
 
 #closeEditModal {
     background-color: var(--red);
-    border: 1px solid var(--white);
+    border: 3px dashed var(--white);
     margin-left: 10%;
     border-radius: 15px;
 }

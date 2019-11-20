@@ -46,7 +46,7 @@ const GiftCard = (props) => {
                <CardText>Delivered: {gifts.delivered}</CardText>
                <Button id="editButton" onClick={() => {props.editUpdateGift(gifts); props.updateOn()}}>Edit</Button>
                <Button id="firstDelete" onClick={toggle}>Delete Gift</Button>
-               <Modal isOpen={modal} toggle={toggle} className={className}>
+               <Modal id="modalDelete" isOpen={modal} toggle={toggle} className={className}>
                    <ModalHeader id="deleteModal">Are You Sure?</ModalHeader>
                        <ModalBody id="deleteBody">
                        You are about to delete this gift. Once it has been deleted, it cannot be recovered. 

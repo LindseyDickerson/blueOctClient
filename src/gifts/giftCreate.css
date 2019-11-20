@@ -46,7 +46,7 @@
 
 #addModal {
     border-radius: 15px;
-    border: 1px var(--white);
+    /* border: 3px dashed var(--white); */
 }
 
 body {
@@ -61,9 +61,9 @@ body {
     color: var(--white);
     border-radius: 15 15 0 0;
     /* border: 1px solid orange; */
-    border-top: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
+    border-top: 3px dashed var(--white);
+    border-left: 3px dashed var(--white);
+    border-right: 3px dashed var(--white);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     /* width: 135px; */
@@ -83,9 +83,9 @@ body {
 
 #modalBody {
     background-color: var(--green);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-left: 3px dashed var(--white);
+    border-right: 3px dashed var(--white);
+    border-bottom: 3px dashed var(--white);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -109,50 +109,50 @@ body {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
 }
 
 #giftInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
 }
 
 #costInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
 }
 
 #storageInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
 }
 
 #buyInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
+    border: 2px dashed var(--white);
 }
 
 #wrapInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px 3px dashed var(--white);
+    border: 2px dashed var(--white);
 }
 
-#delvInput {
+/* #delvInput {
     background-color: var(--red);
     color: var(--white);
     border-radius: 15px;
-    border: 1px solid var(--white);
-}
+    border: 3px dashed var(--white);
+} */
 
 #deliveredGroup {
     /* border: 1px solid lightsalmon; */
@@ -169,7 +169,7 @@ body {
 
 #dropdownwithCarat {
     background-color: var(--red);
-    border: 1px solid var(--white);
+    border: 3px dashed var(--white);
     margin-left: 15%;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -183,7 +183,7 @@ body {
     color: var(--white);
     border-radius: 15px;
     /* border: 1px solid var(--white); */
-    border: 3px solid var(--white);
+    border: 3px dashed var(--white);
 }
 
 

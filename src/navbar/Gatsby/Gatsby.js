@@ -22,7 +22,7 @@ const Gatsby = (props) => {
             
             {/* <Button color="danger" onClick={toggle}>{buttonLabel}</Button> */}
              <Modal id="treeModal" isOpen={modal} toggle={toggle} className={className}>
-              <ModalHeader id="treeModalHeader" toggle={toggle}>Hi! I'm Gatsby, the Gifting Elf!</ModalHeader>
+              <ModalHeader id="treeModalHeader" toggle={toggle}><p id="modalHeaderText">Hi! I'm Gatsby, the Gifting Elf!</p></ModalHeader>
                <ModalBody id="treeModalBody">
                    It's my job to help you keep track of the gifts you will be giving this Christmas season! Enter the details of your gift to help you remember what you bought for whom, where you are stashing it, and so much more! Let's get started!
                 </ModalBody>
